@@ -2,7 +2,7 @@ import ProfilePicture from '../assets/image-profile.jpg'
 
 export default function ProfileCard() {
   return (
-    <article className="bg-white rounded-xl shadow-lg max-w-[350px] mx-auto overflow-hidden">
+    <article className="relative bg-white rounded-xl shadow-lg max-w-[350px] mx-auto overflow-hidden z-20">
       <div className="relative min-h-[140px] flex items-center justify-center bg-[url('/src/assets/bg-pattern-card.svg')] bg-cover bg-center">
         <figure className="absolute top-1/2 rounded-[50%] border-[5px] border-white overflow-hidden">
             <img src={ProfilePicture} alt="Profile-Picture" className="w-full h-full object-cover" />
