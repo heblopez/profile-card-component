@@ -1,8 +1,8 @@
+import ProfileCard from "./components/ProfileCard"
+
 function App() {
   return (
-    <>
-      <h1>Vite + React</h1>
-    </>
+    <ProfileCard />
   )
 }
 
