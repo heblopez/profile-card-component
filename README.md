@@ -1,50 +1,95 @@
-# React + TypeScript + Vite
+# Make It Real - Profile Card Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the Profile Card Component project of the Make It Real course.
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### The challenge
 
-- Configure the top-level `parserOptions` property like this:
+Users should be able to:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- View the optimal layout for your device's screen size
+- View hover and focus for interactive elements
+
+### Screenshot
+
+![Desktop version](/src/assets/screenshot.png)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [React](https://reactjs.org/) - JS library
+- [Vite](https://vitejs.dev/) - Build tool
+
+### What I learned
+
+This project helped me to reinforce the use of Tailwind CSS, as it is a utility-first CSS framework that allows for rapid development and styling of components.
+
+```tsx
+  function App() {
+    return (
+      <>
+        <div
+          className="
+            absolute top-[-75vh] left-[-200vw]
+            desktop:left-[-25vw]
+            desktop:top-[-90vh]
+            xl-desktop:left-[-15vw]
+            xl-desktop:top-[-50vh]
+            w-[978px] h-[978px]
+            bg-[url('./assets/bg-pattern-top.svg')]
+            bg-no-repeat z-0
+          "
+        ></div>
+        <ProfileCard />
+        <div
+          className="
+            absolute bottom-[-75vh] right-[-200vw]
+            desktop:right-[-25vw]
+            desktop:bottom-[-90vh]
+            xl-desktop:right-[-15vw]
+            xl-desktop:bottom-[-50vh]
+            w-[978px] h-[978px]
+            bg-[url('./assets/bg-pattern-bottom.svg')]
+            bg-no-repeat z-0
+          "
+        ></div>
+      </>
+    )
+  }
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Continued development
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Working on this project made me notice that Tailwind is very versatile allowing us to create new classes from the configuration file, according to the customization we are looking for our project.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Useful resources
+
+- [Tailwind CSS](https://tailwindcss.com/) - This is the official Tailwind CSS website, where you will find all the Tailwind classes we have available to use, examples of use and how to create classes with custom settings.
+
+## Author
+
+- Website - [Heberth López](https://www.heblopez.web.app)
+
+## Acknowledgments
+
+A special thanks to the MakeItReal team for the knowledge and support provided in each class and the feedback received on each project.
