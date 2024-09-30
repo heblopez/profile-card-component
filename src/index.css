@@ -19,7 +19,7 @@
   --very-dark-blue: hsl(224, 21%, 14%);
 
   --font-size: 1.125rem;
-  
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -35,5 +35,4 @@ body {
   background-color: var(--eastern-blue);
   font-size: var(--font-size);
   font-weight: 400;
-  padding: 1rem;
 }
